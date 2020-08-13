@@ -96,7 +96,6 @@ export default class ClassesController {
       return response.status(201).send();
 
     } catch (err) {
-      console.log(err);
       
       await trx.rollback();
 
