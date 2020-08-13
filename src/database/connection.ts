@@ -1,16 +1,16 @@
 import knex from "knex";
-// import 'dotenv/config';
+import 'dotenv/config';
 
 
 const db = knex({
-  client: 'pg',
+  client: "pg",
   connection: {
-    host: 'localhost',
-    user: 'postgres',
-    password: 'root',
-    database: 'proffy',
+    host: process.env.PG_HOST,
+    user: process.env.PG_USER,
+    password: process.env.PG_PASSWORD,
+    database: process.env.PG_DATABASE,
   },
   useNullAsDefault: true,
-})
+});
 
 export default db;
