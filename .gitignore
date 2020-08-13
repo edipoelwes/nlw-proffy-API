@@ -1,4 +1,4 @@
 node_modules/
-yarn.locl
+yarn.lock
 .env
 dist
